@@ -295,3 +295,145 @@ color: rgb(243, 77, 118);
     font-size: 18px;
     color: whitesmoke;
 }
+@media (max-width:300px) {
+    body {
+        padding: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #333;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .slid {
+        margin-bottom: 40px;
+    }
+    
+    .slider-container {
+        width: 100%; /* Adjusted for full width */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+        align-items: center;
+    }
+    
+    .slide {
+        min-width: 100%;
+        align-self: center;
+        background-color: aqua;
+        border-radius: 20px;
+    }
+    
+    .slide img {
+        border-radius: 20px;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contain .header {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        z-index: 20;
+        background-color: #333; /* Match body background */
+        padding: 10px; /* Match body padding */
+    }
+    
+    .contain .header .logo {
+        display: flex;
+        gap: 15px;
+        margin-top: 5px;
+        align-items: center;
+    }
+    
+    #change {
+        border-radius: 30px;
+        background-color: aliceblue;
+        border: 2px solid;
+    }
+    
+    .contain .text {
+        color: whitesmoke;
+        text-shadow: 0px 0px 2px;
+    }
+    
+    .contain .header .navbar {
+        display: none; /* Hide navbar on small screens */
+    }
+    
+    .sign {
+        display: flex;
+        justify-content: space-around;
+        width: 100%; /* Adjusted for full width */
+    }
+    
+    .sign .sign_in,
+    .sign .sign_up {
+        width: 48%; /* Adjusted for equal width on small screens */
+    }
+    
+    .sign .sign_in a,
+    .sign .sign_up a {
+        display: block; /* Adjusted for block display */
+        text-align: center; /* Center align text */
+        padding: 10px; /* Add padding */
+    }
+    
+    .main {
+        width: 100vw;
+        margin-top: 70px; /* Adjusted for header height */
+        padding: 10px; /* Add padding */
+    }
+    
+    .main .text .title {
+        font-size: 40px; /* Adjusted for smaller font size */
+    }
+    
+    .text .txt {
+        padding: 20px; /* Adjusted for smaller padding */
+    }
+    
+    .filires {
+        flex-direction: column; /* Adjusted for column layout on small screens */
+        align-items: center; /* Center align items */
+        gap: 20px;
+    }
+    
+    .filires .card {
+        width: 90%; /* Adjusted for full width */
+        height: auto; /* Adjusted for dynamic height */
+    }
+    
+    .guidance {
+        flex-direction: column; /* Adjusted for column layout on small screens */
+        align-items: center; /* Center align items */
+        gap: 20px;
+        padding: 10px; /* Add padding */
+    }
+    
+    .part_left,
+    .part1,
+    .part2 {
+        width: 90%; /* Adjusted for full width */
+    }
+    
+    .footer {
+        width: 100vw;
+        padding: 10px; /* Add padding */
+        bottom: 0;
+    }
+    
+}
