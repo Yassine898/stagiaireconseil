@@ -134,3 +134,116 @@ button{
 input:hover{
     box-shadow:0px 0px 15px black;
 }
+@media (max-width:300px) {
+    img {
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Adjusted for better alignment */
+        margin: 0 auto; /* Center align images */
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../les_images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    
+    .head {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .head .btn {
+        padding: 10px 15px; /* Adjusted for larger tap area */
+    }
+    
+    .head button:hover {
+        color: rgba(255, 255, 255, 0.745);
+        box-shadow: 0px 0px 12px;
+    }
+    
+    .parent {
+        width: 90%; /* Adjusted for smaller screens */
+        border-radius: 20px;
+        padding: 20px;
+        margin: 40px auto; /* Adjusted for smaller screens */
+        display: flex;
+        flex-wrap: wrap; /* Ensure responsiveness */
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+        border: 1px solid rgba(201, 198, 198, .2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 30px;
+    }
+    
+    .part_left {
+        flex: 1; /* Fill available space */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .part_left .titl h3 {
+        text-align: center;
+        font-size: 40px; /* Adjusted for smaller screens */
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgba(0, 0, 0, 0.564);
+        text-shadow: 0px 0px 12px;
+        margin-bottom: 20px; /* Adjusted for smaller screens */
+        animation: title 1.5s alternate infinite ease-in;
+    }
+    
+    .part_right {
+        flex: 1; /* Fill available space */
+        border: 1px solid rgb(214, 209, 209);
+        box-shadow: 0px 0px 20px;
+        border-radius: 20px;
+        padding: 20px; /* Adjusted for smaller screens */
+        background-color: rgba(0, 0, 0, 0.275);
+        backdrop-filter: blur(3px);
+        animation: zn 2s alternate infinite;
+    }
+    
+    .part_right .title {
+        text-align: center;
+        text-decoration: underline;
+        color: white;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center; /* Center align buttons */
+        margin: 10px;
+    }
+    
+    .button button:hover {
+        box-shadow: 0px 0px 10px;
+    }
+    
+    .main .input input {
+        width: 100%; /* Adjusted for full width */
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid rgb(85, 85, 85);
+        padding: 10px; /* Adjusted for larger tap area */
+        font-size: 16px; /* Adjusted for smaller screens */
+        font-weight: 600;
+        background-color: transparent;
+        backdrop-filter: blur(8px);
+        margin-bottom: 10px; /* Adjusted for smaller screens */
+    }
+    
+    input:hover {
+        box-shadow: 0px 0px 15px black;
+    }
+    
+}
